@@ -33,7 +33,7 @@ body {
     border-radius: 8px;
     overflow: hidden; /* This line made the comment-out line in the img element to become redundant*/
     min-width: 500px;
-    width: 30%;
+    width: 35%;
     background-color: white;
 }
 

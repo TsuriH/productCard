@@ -1,0 +1,171 @@
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+   
+ 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    Font-size: 14px;
+    font-family: 'Montserrat', sans-serif;;
+    background-color: var(--Cream);
+    color: var(--Dark-grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.wrapper {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden; /* This line made the comment-out line in the img element to become redundant*/
+    min-width: 500px;
+    width: 30%;
+    background-color: white;
+}
+
+img {
+    width: 100% ;
+    height: 100%;
+    /* border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; */
+}
+
+.image-box-mobile {
+    display: none;
+}
+.image-box-desktop {
+    width:50%;
+}
+
+.content {
+    width: 50%;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.perfume {
+    letter-spacing: 0.35em;
+    font-size: 10px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color:hsl(212, 21%, 14%);
+    line-height: 1em;
+}
+
+.description {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-price {
+    font-family: 'Fraunces', serif;
+    color:hsl(158, 36%, 37%);
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+.small-price {
+    text-decoration: line-through;
+    font-size: 0.75em;
+    margin-right: 3.5em
+}
+
+.btn-add-to-cart {
+    padding: 1em 1em;
+    background-color:hsl(158, 36%, 37%);
+    font-weight: 900;
+    font-size: 0.8em;
+    color:hsl(30, 38%, 92%) ;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-add-to-cart:hover {
+    background-color: hsl(156, 37%, 17%);
+}
+
+.add-to-cart span img {
+    width: 12px;
+}
+
+@media only screen and (max-width: 376px) {
+
+    body {
+        padding: 20px;
+    }
+    
+    .wrapper {
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .image-box-desktop {
+        display: none;
+    }
+
+    .image-box-mobile {
+        display: block;
+        height: 80%;
+    }
+
+    .content {
+        height: 100%;
+        width: 100%;
+        /* justify-content: flex-start;
+        row-gap: 20px; */
+
+    }
+
+    .perfume {
+        font-size: 12px
+    }
+
+    h1 {
+        font-size: 2.1em
+    }
+
+    .description {
+        font-size: .9em;
+    }
+
+    .big-price {
+        font-size: 2.4em;
+    }
+
+    .small-price {
+        font-size: 0.9em;
+    }
+
+    .btn-add-to-cart {
+        font-size: 1em;
+    }
+}

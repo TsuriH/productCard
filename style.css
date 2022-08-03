@@ -32,8 +32,10 @@ body {
     display: flex;
     border-radius: 8px;
     overflow: hidden; /* This line made the comment-out line in the img element to become redundant*/
-    min-width: 500px;
-    width: 35%;
+    /* width: 30%; */
+    width: 600px;
+    height: 450px;
+
     background-color: white;
 }
 
@@ -61,50 +63,52 @@ img {
 
 .perfume {
     letter-spacing: 0.35em;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 h1 {
     font-family: 'Fraunces', serif;
     color:hsl(212, 21%, 14%);
     line-height: 1em;
+   font-size: 2.3em;
 }
 
 .description {
-    font-size: 0.8em;
+    font-size:14px;
     line-height: 1.7em;
 }
 
-.prices {
+.prices-box {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-around;
 }
 
 .big-price {
     font-family: 'Fraunces', serif;
     color:hsl(158, 36%, 37%);
-    font-size: 1.7em;
+    font-size: 32px;
     font-weight: 900;
 }
 
 .small-price {
     text-decoration: line-through;
-    font-size: 0.75em;
-    margin-right: 3.5em
+    font-size: 13px;
+    
 }
 
 .btn-add-to-cart {
     padding: 1em 1em;
     background-color:hsl(158, 36%, 37%);
     font-weight: 900;
-    font-size: 0.8em;
+    font-size: 1em;
     color:hsl(30, 38%, 92%) ;
     border: none;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     gap: 10px;
+    
 }
 
 .btn-add-to-cart:hover {
@@ -115,14 +119,14 @@ h1 {
     width: 12px;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 485px) {
 
     body {
         padding: 20px;
     }
     
     .wrapper {
-        height: 80%;
+        height: 100%;
         flex-direction: column;
         align-items: center;
         min-width: 100%;
@@ -139,10 +143,7 @@ h1 {
 
     .content {
         height: 100%;
-        width: 100%;
-        /* justify-content: flex-start;
-        row-gap: 20px; */
-
+        width: 98%;
     }
 
     .perfume {
